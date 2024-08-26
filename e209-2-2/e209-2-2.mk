@@ -7,14 +7,14 @@ ProjectName            :=e209-2-2
 ConfigurationName      :=Debug
 WorkspaceConfiguration :=Debug
 WorkspacePath          :="D:/Users/Rockmore/Documentos/Code Projects/CPP Projects"
-ProjectPath            :="D:/Users/Rockmore/Documentos/Code Projects/CPP Projects/e209-2-2"
-IntermediateDirectory  :=../build-$(WorkspaceConfiguration)/e209-2-2
+ProjectPath            :="D:/Users/Rockmore/Documentos/Code Projects/CPP Projects/E209L/e209-2-2"
+IntermediateDirectory  :=../../build-$(WorkspaceConfiguration)/E209L/e209-2-2
 OutDir                 :=$(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Rockmore
-Date                   :=17/08/2024
+Date                   :=25/08/2024
 CodeLitePath           :=D:/CodeLite
 MakeDirCommand         :=mkdir
 LinkerName             :=C:/msys64/clang64/bin/clang++.exe
@@ -30,7 +30,7 @@ LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
 OutputDirectory        :=D:/Users/Rockmore/Documentos/Code Projects/CPP Projects/build-$(WorkspaceConfiguration)/bin
-OutputFile             :=..\build-$(WorkspaceConfiguration)\bin\$(ProjectName).exe
+OutputFile             :=..\..\build-$(WorkspaceConfiguration)\bin\$(ProjectName).exe
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
@@ -96,7 +96,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp 
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Users/Rockmore/Documentos/Code Projects/CPP Projects/e209-2-2/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Users/Rockmore/Documentos/Code Projects/CPP Projects/E209L/e209-2-2/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
