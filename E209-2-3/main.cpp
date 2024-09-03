@@ -10,6 +10,10 @@ int main()
 {
     int n; //quant de testes
     int m;
+    int neg = 0;
+    int pos = 0;
+    int par = 0;
+    int imp = 0;
     vector<int> v1;
     
     cin >> n;
@@ -22,7 +26,19 @@ int main()
         }
     }
     for (auto i = v1.begin(); i != v1.end(); ++i)
-        cout << *i << " ";
+    {
+        if(*i < 0)
+            neg++;
+        else pos++;
+        if(*i % 2 == 0)
+            par++;
+        else imp++;
+    }
+    //cout << *i << " ";
+    cout << "Quantidade de numeros pares: " << par << endl;
+    cout << "Quantidade de numeros impares: " << imp << endl;
+    cout << "Quantidade de numeros positivos: " << pos << endl;
+    cout << "Quantidade de numeros negativos: " << neg << endl;
 
     
 }
